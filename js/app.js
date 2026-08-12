@@ -209,6 +209,47 @@ document.addEventListener("DOMContentLoaded", () => {
         return characters[characterId] ?? "Unknown";
 
     }
+    
+        /* ==============================================
+       CHARACTER LOADER
+    ============================================== */
+
+    async function loadCharacter(characterId) {
+
+        try {
+
+            const response =
+                await fetch(
+                    `./characters/${characterId}.json`
+                );
+
+            if (!response.ok) {
+
+                throw new Error(
+                    `Character data not found: ${characterId}`
+                );
+
+            }
+
+            const character =
+                await response.json();
+
+            return character;
+
+        } catch (error) {
+
+            console.error(
+                "LORELIA: Character Load Error",
+                error
+            );
+
+            return null;
+
+        }
+
+    }
+    
+    
 
    async function loadKaname() {
 
