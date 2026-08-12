@@ -226,62 +226,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* ==============================================
-       CHARACTER SELECTED
-    ============================================== */
+/* ==============================================
+   CHARACTER SELECTED
+============================================== */
 
-    function selectCharacter(characterId) {
+function selectCharacter(characterId) {
 
-        console.log(
-            "LORELIA: Character selected →",
-            characterId
-        );
+    console.log(
+        "LORELIA: Character selected →",
+        characterId
+    );
 
-        app.innerHTML = `
-            <section id="characterSelected">
+    showChat(characterId);
 
-                <div class="screenTitle">
-
-                    <p>LORELIA</p>
-
-                    <h2>CHARACTER SELECTED</h2>
-
-                </div>
-
-                <div class="selectedCharacter">
-
-                    <p>
-                        Selected Character
-                    </p>
-
-                    <h1>
-                        ${getCharacterName(characterId)}
-                    </h1>
-
-                    <span>
-                        ${characterId}
-                    </span>
-
-                </div>
-
-                <button id="returnCharacterSelect">
-                    RETURN
-                </button>
-
-            </section>
-        `;
-
-
-        document
-            .getElementById("returnCharacterSelect")
-            .addEventListener("click", () => {
-
-                showCharacterSelect();
-
-            });
-
-    }
-
+}
 
     /* ==============================================
        CHARACTER NAME
