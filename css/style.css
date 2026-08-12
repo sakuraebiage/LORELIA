@@ -249,6 +249,8 @@ body {
 
 .characterCard {
     min-height: 360px;
+    width: 250px;
+    min-width: 0;
 
     position: relative;
 
@@ -282,6 +284,7 @@ body {
         border-color 0.3s ease,
         background 0.3s ease,
         box-shadow 0.3s ease;
+
 }
 
 
