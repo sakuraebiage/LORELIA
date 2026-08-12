@@ -261,4 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }
 
+loadKaname();
+
 });
