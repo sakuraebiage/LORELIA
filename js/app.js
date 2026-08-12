@@ -33,6 +33,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function showCharacterSelect() {
 
+        const kaname = await loadCharacter("kaname");
+
+        if (!kaname) {
+
+            console.error(
+                "LORELIA: Kaname data could not be loaded."
+            );
+
+            return;
+
+        }
+
+
         app.innerHTML = `
             <section id="characterSelect">
 
@@ -41,61 +54,146 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h2>CHARACTER SELECT</h2>
                 </div>
 
+
                 <div class="characterList">
 
-         <button class="characterCard" data-character="kaname">
 
-    <div class="characterImage">
-        <!-- キャラクター画像は後から追加 -->
-    </div>
+                    <!-- ==========================
+                         KANAME
+                    ========================== -->
 
-    <div class="characterInfo">
+                    <button
+                        class="characterCard"
+                        data-character="kaname"
+                    >
 
-        <span class="characterName">
-            萩月 要
-        </span>
+                        <div class="characterImage">
 
-        <span class="characterRole">
-            人理権能
-        </span>
+                            <img
+                                src="${kaname.appearance.image}"
+                                alt="${kaname.name}"
+                            >
 
-    </div>
+                        </div>
 
-</button>
 
-                    <button class="characterCard" data-character="keika">
-                        <span class="characterName">萩月 恵佳</span>
-                        <span class="characterRole">万象権能</span>
+                        <div class="characterInfo">
+
+                            <span class="characterName">
+                                ${kaname.name}
+                            </span>
+
+                            <span class="characterRole">
+                                ${kaname.basic.occupation}
+                            </span>
+
+                        </div>
+
                     </button>
 
-                    <button class="characterCard" data-character="shizumi">
-                        <span class="characterName">十束 静海</span>
-                        <span class="characterRole">破壊権能</span>
+
+                    <!-- ==========================
+                         KEIKA
+                    ========================== -->
+
+                    <button
+                        class="characterCard"
+                        data-character="keika"
+                    >
+
+                        <span class="characterName">
+                            萩月 恵佳
+                        </span>
+
+                        <span class="characterRole">
+                            万象権能
+                        </span>
+
                     </button>
 
-                    <button class="characterCard" data-character="kohaku">
-                        <span class="characterName">九条 瑚白</span>
-                        <span class="characterRole">創造権能</span>
+
+                    <!-- ==========================
+                         SHIZUMI
+                    ========================== -->
+
+                    <button
+                        class="characterCard"
+                        data-character="shizumi"
+                    >
+
+                        <span class="characterName">
+                            十束 静海
+                        </span>
+
+                        <span class="characterRole">
+                            破壊権能
+                        </span>
+
                     </button>
 
-                    <button class="characterCard" data-character="houraku">
-                        <span class="characterName">萩月 宝楽</span>
-                        <span class="characterRole">Character</span>
+
+                    <!-- ==========================
+                         KOHAKU
+                    ========================== -->
+
+                    <button
+                        class="characterCard"
+                        data-character="kohaku"
+                    >
+
+                        <span class="characterName">
+                            九条 瑚白
+                        </span>
+
+                        <span class="characterRole">
+                            創造権能
+                        </span>
+
                     </button>
 
-                    <button class="characterCard allCharactersCard" data-character="all">
 
-    <span class="characterName">
-        ✦ ALL FIVE ✦
-    </span>
+                    <!-- ==========================
+                         HOURAKU
+                    ========================== -->
 
-    <span class="characterRole">
-        5人全員と会話する
-    </span>
+                    <button
+                        class="characterCard"
+                        data-character="houraku"
+                    >
 
-</button>
+                        <span class="characterName">
+                            萩月 宝楽
+                        </span>
+
+                        <span class="characterRole">
+                            Character
+                        </span>
+
+                    </button>
+
+
+                    <!-- ==========================
+                         ALL FIVE
+                    ========================== -->
+
+                    <button
+                        class="characterCard allCharactersCard"
+                        data-character="all"
+                    >
+
+                        <span class="characterName">
+                            ✦ ALL FIVE ✦
+                        </span>
+
+                        <span class="characterRole">
+                            5人全員と会話する
+                        </span>
+
+                    </button>
+
 
                 </div>
+
 
                 <button id="backButton">
                     BACK
@@ -104,9 +202,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </section>
         `;
 
-        setupCharacterSelect();
-    }
 
+        setupCharacterSelect();
+
+    }
 
     /* ==============================================
        CHARACTER SELECT EVENTS
