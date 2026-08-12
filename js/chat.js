@@ -10,4 +10,78 @@ function showChat(characterId) {
         characterId
     );
 
+
+    const app =
+        document.getElementById("app");
+
+
+    app.innerHTML = `
+
+        <section id="chatScreen">
+
+
+            <!-- ==================================
+                 CHAT HEADER
+            ================================== -->
+
+            <header class="chatHeader">
+
+                <div class="chatCharacterName">
+                    萩月 要
+                </div>
+
+                <div class="chatCharacterRole">
+                    人理権能
+                </div>
+
+            </header>
+
+
+            <!-- ==================================
+                 CHAT LOG
+            ================================== -->
+
+            <main
+                id="chatLog"
+                class="chatLog"
+            >
+
+                <div class="message characterMessage">
+
+                    <div class="messageName">
+                        萩月 要
+                    </div>
+
+                    <div class="messageText">
+                        ……来たか。
+                    </div>
+
+                </div>
+
+            </main>
+
+
+            <!-- ==================================
+                 CHAT INPUT
+            ================================== -->
+
+            <footer class="chatInputArea">
+
+                <input
+                    id="chatInput"
+                    type="text"
+                    placeholder="メッセージを入力……"
+                >
+
+                <button id="sendButton">
+                    SEND
+                </button>
+
+            </footer>
+
+
+        </section>
+
+    `;
+
 }
