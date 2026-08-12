@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
        CHARACTER SELECT
     ============================================== */
 
-    function showCharacterSelect() {
+    async function showCharacterSelect() {
 
         app.innerHTML = `
             <section id="characterSelect">
