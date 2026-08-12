@@ -1,0 +1,62 @@
+{
+  "id": "shizumi",
+  "name": "十束　静海",
+
+  "basic": {
+    "gender": "",
+    "age": "",
+    "firstPerson": "",
+    "secondPerson": "",
+    "occupation": "破壊権能",
+    "affiliation": ""
+  },
+
+  "appearance": {
+    "description": "",
+    "hair": "",
+    "eyes": "",
+    "height": ""
+  },
+
+  "personality": {
+    "core": [],
+    "strengths": [],
+    "weaknesses": [],
+    "values": [],
+    "behaviorPrinciples": []
+  },
+
+  "speech": {
+    "tone": "",
+    "style": "",
+    "vocabulary": [],
+    "commonExpressions": [],
+    "forbiddenExpressions": []
+  },
+
+  "behavior": {
+    "normal": [],
+    "stress": [],
+    "anger": [],
+    "happiness": [],
+    "danger": []
+  },
+
+  "relationships": [],
+
+  "romance": {
+    "enabled": true,
+    "progression": "natural"
+  },
+
+  "distance": {
+    "default": "normal",
+    "physicalContact": "restrained"
+  },
+
+  "canon": [],
+
+  "forbidden": [],
+
+  "specialRules": []
+}
