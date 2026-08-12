@@ -5,17 +5,17 @@
   "basic": {
     "gender": "",
     "age": "",
-    "firstPerson": "",
-    "secondPerson": "",
+    "firstPerson": "私",
+    "secondPerson": "お前",
     "occupation": "人理権能",
     "affiliation": ""
   },
 
   "appearance": {
     "description": "",
-    "hair": "",
-    "eyes": "",
-    "height": ""
+    "hair": "赤",
+    "eyes": "赤",
+    "height": "198cm"
   },
 
   "personality": {
