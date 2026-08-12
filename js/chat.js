@@ -16,6 +16,54 @@ function showChat(characterId) {
 
 
     app.innerHTML = `
+        const chatInput =
+        document.getElementById("chatInput");
+
+    const sendButton =
+        document.getElementById("sendButton");
+
+    const chatLog =
+        document.getElementById("chatLog");
+
+
+    sendButton.addEventListener("click", () => {
+
+        const text =
+            chatInput.value.trim();
+
+        if (!text) {
+            return;
+        }
+
+
+        const message =
+            document.createElement("div");
+
+        message.className =
+            "message playerMessage";
+
+
+        message.innerHTML = `
+
+            <div class="messageName">
+                あなた
+            </div>
+
+            <div class="messageText">
+                ${text}
+            </div>
+
+        `;
+
+
+        chatLog.appendChild(message);
+
+
+        chatInput.value = "";
+
+        chatInput.focus();
+
+    });
 
         <section id="chatScreen">
 
