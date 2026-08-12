@@ -54,12 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     >
 
                         <div class="characterImage">
-
-                            <img
-                                src="${kaname.appearance.image}"
-                                alt="${kaname.name}"
-                            >
-
                         </div>
 
 
