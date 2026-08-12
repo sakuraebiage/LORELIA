@@ -43,10 +43,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <div class="characterList">
 
-                    <button class="characterCard" data-character="kaname">
-                        <span class="characterName">萩月 要</span>
-                        <span class="characterRole">人理権能</span>
-                    </button>
+         <button class="characterCard" data-character="kaname">
+
+    <div class="characterImage">
+        <!-- キャラクター画像は後から追加 -->
+    </div>
+
+    <div class="characterInfo">
+
+        <span class="characterName">
+            萩月 要
+        </span>
+
+        <span class="characterRole">
+            人理権能
+        </span>
+
+    </div>
+
+</button>
 
                     <button class="characterCard" data-character="keika">
                         <span class="characterName">萩月 恵佳</span>
