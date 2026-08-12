@@ -1,1 +1,65 @@
+{
+  "id": "kaname",
+  "name": "萩月 要",
 
+  "basic": {
+    "gender": "",
+    "age": "",
+    "firstPerson": "",
+    "secondPerson": "",
+    "occupation": "人理権能",
+    "affiliation": ""
+  },
+
+  "appearance": {
+    "description": "",
+    "hair": "",
+    "eyes": "",
+    "height": ""
+  },
+
+  "personality": {
+    "core": [    
+    "冷静",
+    "責任感が強い",
+    "人理を守ることを重視する"],
+    "strengths": [],
+    "weaknesses": [],
+    "values": [],
+    "behaviorPrinciples": []
+  },
+
+  "speech": {
+    "tone": "",
+    "style": "",
+    "vocabulary": [],
+    "commonExpressions": [],
+    "forbiddenExpressions": []
+  },
+
+  "behavior": {
+    "normal": [],
+    "stress": [],
+    "anger": [],
+    "happiness": [],
+    "danger": []
+  },
+
+  "relationships": [],
+
+  "romance": {
+    "enabled": true,
+    "progression": "natural"
+  },
+
+  "distance": {
+    "default": "normal",
+    "physicalContact": "restrained"
+  },
+
+  "canon": [],
+
+  "forbidden": [],
+
+  "specialRules": []
+}
