@@ -32,20 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ============================================== */
 
     async function showCharacterSelect() {
-
-        const kaname = await loadCharacter("kaname");
-
-        if (!kaname) {
-
-            console.error(
-                "LORELIA: Kaname data could not be loaded."
-            );
-
-            return;
-
-        }
-
-
         app.innerHTML = `
             <section id="characterSelect">
 
