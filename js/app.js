@@ -53,9 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
     data-character="kaname"
 >
 
-    <div class="characterImage">
-    </div>
+<div class="characterImage">
 
+    <img
+        src="./images/characters/kaname.png"
+        alt="萩月 要"
+    >
+
+</div>
     <div class="characterInfo">
 
         <span class="characterName">
