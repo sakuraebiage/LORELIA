@@ -210,4 +210,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+   async function loadKaname() {
+
+    const response = await fetch("./characters/kaname.json");
+
+    const kaname = await response.json();
+
+    console.log(kaname);
+
+}
+
 });
