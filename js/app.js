@@ -44,33 +44,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="characterList">
 
 
-                    <!-- ==========================
-                         KANAME
-                    ========================== -->
+<!-- ==========================
+     KANAME
+========================== -->
 
-                    <button
-                        class="characterCard"
-                        data-character="kaname"
-                    >
+<button
+    class="characterCard"
+    data-character="kaname"
+>
 
-                        <div class="characterImage">
-                        </div>
+    <div class="characterImage">
+    </div>
 
+    <div class="characterInfo">
 
-                        <div class="characterInfo">
+        <span class="characterName">
+            萩月 要
+        </span>
 
-                            <span class="characterName">
-                                ${kaname.name}
-                            </span>
+        <span class="characterRole">
+            人理権能
+        </span>
 
-                            <span class="characterRole">
-                                ${kaname.basic.occupation}
-                            </span>
+    </div>
 
-                        </div>
-
-                    </button>
-
+</button>
 
                     <!-- ==========================
                          KEIKA
