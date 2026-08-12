@@ -233,12 +233,11 @@ body {
 ================================================== */
 
 .characterList {
-    width: min(100%, 600px);
+    width: 500px !important;
 
     display: grid;
 
-    grid-template-columns:
-        repeat(2, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 16px;
 }
